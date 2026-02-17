@@ -25,7 +25,7 @@ export default defineConfig({
     },
   },
 
-  base: "/Internship_Task3/",
+  //base: "/Internship_Task3/",
   test: {
     globals: true,
     setupFiles: ["setupTests.ts"],
