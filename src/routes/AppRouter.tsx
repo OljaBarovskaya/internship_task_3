@@ -6,13 +6,13 @@ import Contacts from "@/pages/Contacts";
 import * as Layout from "@/layouts";
 
 export default function AppRouter() {
-  const getNavLinkClassName = ({ isActive }: { isActive: Boolean }) =>
+  const getNavLinkClassName = ({ isActive }: { isActive: boolean }) =>
     `${
       isActive ? "text-primary font-bold" : "text-black font-medium"
     } px-6  sm:px-9 no-underline`;
 
   return (
-    <BrowserRouter basename="/Internship_Task3">
+    <BrowserRouter>
       <Layout.Header>
         <nav className="text-size-large">
           <NavLink to="/" className={getNavLinkClassName}>
